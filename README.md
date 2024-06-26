@@ -37,7 +37,16 @@ sudo apt-get install pdflatex
     ```
     pdftk myfile.pdf multistamp numbers.pdf output myfile_numbered.pdf
     ```
-6. You will now have a new file called myfile_numbered.pdf.
+
+    Can also be sdone with pdfsak
+```
+   pdfsak --input-file article1.pdf --output addtext.pdf --text "\large \$page/\$pages" br 0.99 0.99 --text "\huge \$day/\$month/\$year" tl 0.01 0.01
+```
+   Using the following:
+```
+   pdfsak --input-file test.pdf --output addtext.pdf --text "BATES \large \$page/\$pages" br 0.50 0.99 --overwrite
+```
+7. You will now have a new file called myfile_numbered.pdf.
    
 8. Do a happy dance.    
 
