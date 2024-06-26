@@ -49,4 +49,6 @@ sudo apt-get install pdflatex
 7. You will now have a new file called myfile_numbered.pdf.
    
 8. Do a happy dance.    
-
+```
+pdfsak --input-file test.pdf --output addtext.pdf --text "\textcolor{red}{\LARGE \$page/\$pages}" br 0.50 0.99 --overwrite
+```
