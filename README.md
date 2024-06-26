@@ -52,3 +52,6 @@ sudo apt-get install pdflatex
 ```
 pdfsak --input-file test.pdf --output addtext.pdf --text "\textcolor{red}{\LARGE \$page/\$pages}" br 0.50 0.99 --overwrite
 ```
+```
+pdfsak --input-file test.pdf --output addtext.pdf --text "\textcolor{red}{\Large Bates_\$page}" br 0.50 0.99 --overwrite
+```
